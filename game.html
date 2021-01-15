@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 10000,
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>女子軟式野球チーム villains(ヴィランズ)</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a><br>
+                    <p class="rubi">ホーム</p>
+                </li>
+                <li><a href="team.html">Team</a><br>
+                    <p class="rubi">チーム</p>
+                </li>
+                <li><a href="member.html">Member</a><br>
+                    <p class="rubi">メンバー</p>
+                </li>
+                <li><a class="current" href="game.html">Game</a><br>
+                    <p class="rubi">試合</p>
+                </li>
+                <li><a href="schedule.html">Schedule</a><br>
+                    <p class="rubi">スケジュール</p>
+                </li>
+                <li><a href="sns.html">Communication</a><br>
+                    <p class="rubi">SNS</p>
+                </li>
+                <li><a href="contact.html">Contact</a><br>
+                    <p class="rubi">問い合わせ</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <select class="year" style="margin-left: 100px; direction: rtl;">
+            <option value="select">年-------</option>
+            <option value="2020">2020年</option>
+            <option value="2021">2021年</option>
+        </select>
+
+
+        <select class="month" style="direction: rtl;">
+            <option value="select">月--</option>
+            <option value="jan">1月</option>
+            <option value="feb">2月</option>
+            <option value="mar">3月</option>
+            <option value="apr">4月</option>
+            <option value="may">5月</option>
+            <option value="june">6月</option>
+            <option value="july">7月</option>
+            <option value="aug">8月</option>
+            <option value="sept">9月</option>
+            <option value="oct">10月</option>
+            <option value="nov">11月</option>
+            <option value="dec">12月</option>
+        </select>
+        <div id="2020">
+            <section id="oct">
+                <div class="slider">
+                    <img src="img/game/201031.png" alt="game_201031">
+                    <img src="img/game/201024.png" alt="game_201024">
+                    <img src="img/game/201004.png" alt="game_201004">
+                </div>
+            </section>
+            <section id="nov">
+                <div class="slider">
+                    <img src="img/game/201108.png" alt="game_201108">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.year').change(function () {
+                var val1 = $(this).val();
+
+                $('.month').change(function () {
+                    var val2 = $(this).val();
+                    $('section').hide();
+                    $('#' + val1 + ' #' + val2).fadeIn();
+                });
+            });
+        });
+    </script>
+
+
+    <footer>
+        <div class="menu">
+            <ul>
+                <li><a href="qa.html">よくある質問</a></li>
+                <li><a href="attention.html">当サイトの取り扱い</a></li>
+            </ul>
+        </div>
+        &copy; villains
+    </footer>
+</body>
+
+</html>
