@@ -84,10 +84,10 @@ footer{
 }
 
 /*team css*/
-table th{
+.table-team th{
 	padding: 10px;
 }
-table td{
+.table-team td{
 	padding: 10px;
 }
 
@@ -105,22 +105,23 @@ section {
 .table-member{
 	font-size: 20px;
 }
-.table-member tr :first-child{
-	width: 55%;
+.table-member-1{
+	width: 50%;
+	padding: 10px;
 }
-.table-member tr :last-child{
-	width: 35%;
+.table-member-3{
+	width: 30%;
 }
-.table-member th{
-	width: 10%;
+.table-member-2{
+	width: 20%;
 	padding: 0px;
 }
 
 .table-member td .img1{
-	width: 55%;
+	width: 60%;
 }
 .table-member td .img2{
-	width: 40%;
+	width: 35%;
 }
 /*q&a*/
 #qa{
