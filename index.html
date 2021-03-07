@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>villains(ヴィランズ)</title>
+    <title>Villains(ヴィランズ)</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -11,8 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+    <script type="text/javascript" src="js/pagetop.js"></script>
+    <script type="text/javascript" src="js/template.js">
+    
 
-    <script type="text/javascript">
+        
         $(document).ready(function () {
             $('.slider').bxSlider({
                 auto: true,
@@ -24,7 +27,8 @@
 
 <body>
     <header>
-        <h1>女子軟式野球チーム villains(ヴィランズ)</h1>
+        <img src="img/logo.PNG" class="img-logo">
+        <h1>女子軟式野球チーム Villains(ヴィランズ)</h1>
         <div class="menu">
             <ul>
                 <li><a class="current" href="index.html">Home</a><br>
@@ -55,9 +59,7 @@
         <img src="img/ホーム.JPG" class="img-home">
         <div class="slider-home">
             <div class="slider">
-                <img src="img/member/aimi.JPG">
-                <img src="img/member/beni.JPG">
-                <img src="img/member/eri.JPG">
+                <img src="">
             </div>
         </div>
         <div class="main">
@@ -80,16 +82,8 @@
 
 
     </div>
-    <footer>
-        <div class="menu">
-            <ul>
-                <li><a href="qa.html">よくある質問</a></li>
-                <li><a href="attention.html">著作権とリンクについて</a></li>
-            </ul>
-        </div>
-
-        &copy; villains
-    </footer>
+    <p id="pageTop"><a href="#">↑</a></p>
+    <script type="text/javascript">footer();</script>
 </body>
 
 </html>
