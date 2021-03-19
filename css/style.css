@@ -9,6 +9,15 @@ header{
 	max-width: 15%;
 	float: left;
 }
+.img-logo-sns img{
+	max-width: 3%;
+	margin: 1%;
+}
+.img-logo-sns img:hover{
+	-webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
 .content{
 	background-color: #fff;
 	padding: 40px;
@@ -81,14 +90,10 @@ header{
 	bottom: 20px;
 	right: 20px;
 }
-  
-   
-  
+
 #pageTop i {
 	padding-top: 6px
 }
-  
-   
   
 #pageTop a {
 	display: block;
@@ -124,6 +129,38 @@ footer{
 .table-team td{
 	padding: 10px;
 }
+.message{
+	position: relative;
+	padding: 1.5rem 2rem;
+	border: 3px solid #d8d8d8;
+	border-radius: 10px;
+	background: #f9f9f9;
+	margin: 20px;
+  }
+  
+.message:before {
+	position: absolute;
+	bottom: -14px;
+	left: 1em;
+	width: 0;
+	height: 0;
+	content: '';
+	border-width: 14px 12px 0 12px;
+	border-style: solid;
+	border-color: #d8d8d8 transparent transparent transparent;
+  }
+  
+.message:after {
+	position: absolute;
+	bottom: -10px;
+	left: 1em;
+	width: 0;
+	height: 0;
+	content: '';
+	border-width: 14px 12px 0 12px;
+	border-style: solid;
+	border-color: #f9f9f9 transparent transparent transparent;
+  }
 
 /*game css*/
 select{
