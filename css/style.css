@@ -1,3 +1,4 @@
+
 body{
 	background-color: #fff;
 	
@@ -5,13 +6,19 @@ body{
 header{
 	text-align: center;
 }
+header h1{
+	float: left;
+	margin: 15px;
+}
+
 .img-logo{
-	max-width: 15%;
+	max-width: 6%;
 	float: left;
 }
 .img-logo-sns img{
 	max-width: 3%;
 	margin: 1%;
+	
 }
 .img-logo-sns img:hover{
 	-webkit-transform: translateY(-5px);
@@ -22,9 +29,11 @@ header{
 	background-color: #fff;
 	padding: 40px;
 }
+
 .menu ul{
-	margin: 0 ;
-	padding: 40px ;
+	margin: 20px ;
+	padding: 10px ;
+	background-color: rgb(5, 10, 80);
 	}
 .menu li{
 	list-style: none;
@@ -41,7 +50,7 @@ header{
 	}
 .menu a{
 	text-decoration: none;
-	color: #333;
+	color: #fff;
 	}
 .menu a.current{
 	color: #00B0F0;
@@ -55,15 +64,15 @@ header{
 	color: #fff;
 	text-align: center;
 	background-color: rgb(5, 10, 80);
+	
 }
 .main{
 	text-align: center;
-	font-size: 20px;
+	/* font-size: 20px; */
 }
 
 .img-home{
 	max-width: 100%;
-	height: auto;
 	box-sizing: border-box;
 
 }
@@ -83,6 +92,13 @@ header{
 	#twitter {
 	  flex-grow: 1;
 	}
+}
+#insta{
+	margin: 0 0 1% 0;
+}
+
+#twitter{
+	margin: 0 0 0 1% ;
 }
 
 #pageTop {
@@ -135,7 +151,7 @@ footer{
 	border: 3px solid #d8d8d8;
 	border-radius: 10px;
 	background: #f9f9f9;
-	margin: 20px;
+	margin: 5% 15%;
   }
   
 .message:before {
@@ -162,10 +178,12 @@ footer{
 	border-color: #f9f9f9 transparent transparent transparent;
   }
 
-/*game css*/
-select{
-	font-size: 20px;
+.img-team {
+	width: 60%;
 }
+
+/*game css*/
+
 section {
 	padding: 0px 100px;
 	width: 100%;
@@ -174,7 +192,7 @@ section {
 
 /*member*/
 .table-member{
-	font-size: 20px;
+	/* font-size: 20px; */
 	border-collapse: collapse;
 }
 .table-member tbody{
