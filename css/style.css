@@ -33,7 +33,7 @@ header h1{
 .menu ul{
 	margin: 20px ;
 	padding: 10px ;
-	background-color: rgb(5, 10, 80);
+	background-color: rgb(3, 15, 67);
 	}
 .menu li{
 	list-style: none;
@@ -63,7 +63,7 @@ header h1{
 .content h2{
 	color: #fff;
 	text-align: center;
-	background-color: rgb(5, 10, 80);
+	background-color: rgb(3, 15, 67);
 	
 }
 .main{
@@ -105,6 +105,12 @@ header h1{
 
 #twitter{
 	margin: 0 0 0 1% ;
+}
+
+#twitter a img:hover{
+	-webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 #pageTop {
