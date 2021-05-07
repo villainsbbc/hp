@@ -1,10 +1,4 @@
-html {
-	box-sizing: border-box;
-}
 
-*, *:before, *:after{
-	box-sizing: inherit;
-}
 
 body{
 	background-color: #fff;
@@ -21,6 +15,13 @@ h1 {
 	font-size: 3vw;
 }
 
+h2 {
+	font-size: 2vw;
+}
+
+.tag {
+	background-color: rgb(3, 15, 67);
+}
 
 .img-logo{
 	max-width: 13%;
@@ -41,9 +42,12 @@ h1 {
 	padding: 40px;
 }
 
+.nav-item a{
+	font-size: 1.5vw;
+}
 .menu ul{
-	margin: 20px ;
-	padding: 10px ;
+	/* margin: 20px ; */
+	padding: 0.5%;
 	background-color: rgb(3, 15, 67);
 	}
 .menu li{
@@ -52,10 +56,10 @@ h1 {
 	width: 10%;
 	min-width: 90px;
 	}
-.menu p.rubi{
+/* .menu p.rubi{
 	color: gray;
 	font-size: 1vw;
-}
+} */
 .menu li:not(:last-child){
 	border-right:2px solid #ddd;
 	}
@@ -78,25 +82,28 @@ h1 {
 	background-color: rgb(3, 15, 67);
 	
 }
+
 .main{
 	text-align: center;
 }
 
-.content .slider-home{
-	max-width: 50%;
-	text-align: left;
+.img-home{
+	padding: 3% 0%;
 }
 @media (min-width: 400px) {
 	#sns {
 	  display: flex;
+	  padding: 3% 0%;
 	}
 	#insta {
 	  flex-grow: 1;
 	  text-align: center;
 	  max-width: 50%;
+	  padding: 0% 3%;
 	}
 	#twitter {
 	  flex-grow: 1;
+	  padding: 0% 3%;
 	}
 }
 #insta{
@@ -153,7 +160,7 @@ h1 {
 footer{
 	text-align: center;
 	font-size: 80%;
-	padding: 5px;
+	padding: 0%;
 }
 
 /*team css*/
