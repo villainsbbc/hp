@@ -24,7 +24,9 @@ h1 {
 }
 
 h2 {
-	font-size: 3vw;
+	font-size: 2.5vw;
+	color: #fff;
+	text-align: center;
 }
 
 .tag {
@@ -53,6 +55,7 @@ h2 {
 .nav-item a{
 	font-size: 1.5vw;
 }
+
 .menu ul{
 	/* margin: 20px ; */
 	padding: 0.5%;
@@ -64,10 +67,7 @@ h2 {
 	width: 10%;
 	min-width: 90px;
 	}
-/* .menu p.rubi{
-	color: gray;
-	font-size: 1vw;
-} */
+
 .menu li:not(:last-child){
 	border-right:2px solid #ddd;
 	}
@@ -83,13 +83,6 @@ h2 {
 	color:#F7CB4D;
 	border-bottom:2px solid #F7CB4D;
 	}
-.content h2{
-	font-size: 2.5vw;
-	color: #fff;
-	text-align: center;
-	background-color: rgb(3, 15, 67);
-	
-}
 
 .main{
 	text-align: center;
@@ -214,30 +207,21 @@ section {
 }
 
 /*member*/
-.table-member{
-	/* font-size: 20px; */
-	border-collapse: collapse;
-}
-.table-member tbody{
-	border-top: 50px solid white;
-}
-.table-member-1{
-	width: 50%;	
-}
-.table-member-3{
-	width: 30%;
-}
-.table-member-2{
-	width: 20%;
-
-}
-
-.table-member td .img1{
-	width: 60%;
-}
-.table-member td .img2{
+.align-bottom td:nth-child(1){
 	width: 35%;
+	padding: 1%;
 }
+.align-bottom td:nth-child(2){
+	width: 15%;
+	padding: 1% 1% 1% 0%;
+}
+.align-bottom th{
+	width: 17%;
+}
+.align-bottom td:nth-child(3){
+	width: 33%;
+}
+
 /*q&a*/
 #qa{
 	

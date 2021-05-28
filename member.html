@@ -2,66 +2,89 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Member</title>
+    <!-- bootstrapのcss -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- <script type="text/javascript" src="js/pagetop.js"></script> -->
     <script type="text/javascript" src="js/footer.js"></script>
-    <script type="text/javascript" src="js/pagetop.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="img/logo.PNG" class="img-logo">
-        <h1>女子軟式野球チーム Villains(ヴィランズ)</h1>
-        <div class="img-logo-sns">
-            <a href="https://www.instagram.com/villains_bbc/" target="_blank" rel="noopener noreferrer"><img
-                    src="img/sns/insta.WEBP"></a>
-            <a href="https://www.facebook.com/villains89/" target="_blank" rel="noopener noreferrer"><img
-                    src="img/sns/fb.png"></a>
-            <a href="https://twitter.com/Villains_bbc" target="_blank" rel="noopener noreferrer"><img
-                    src="img/sns/twitter.png"></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Home</a><br>
-                    <p class="rubi">ホーム</p>
-                </li>
-                <li><a href="team.html">Team</a><br>
-                    <p class="rubi">チーム</p>
-                </li>
-                <li><a class="current" href="member.html">Member</a><br>
-                    <p class="rubi">メンバー</p>
-                </li>
-                <li><a href="game.html">Game</a><br>
-                    <p class="rubi">試合</p>
-                </li>
-                <li><a href="schedule.html">Schedule</a><br>
-                    <p class="rubi">スケジュール</p>
-                </li>
-                <li><a href="sns.html">Communication</a><br>
-                    <p class="rubi">SNS</p>
-                </li>
-                <li><a href="contact.html">Contact</a><br>
-                    <p class="rubi">問い合わせ</p>
-                </li>
-            </ul>
+        <div class="row align-items-center">
+            <img src="img/logo.PNG" class="img-logo col-2 img-fluid">
+            <div class="col-7">
+                <h1>女子軟式野球チーム Villains(ヴィランズ)</h1>
+            </div>
+            <div class="img-logo-sns col-3 img-fluid">
+                <a href="https://www.instagram.com/villains_bbc/" target="_blank" rel="noopener noreferrer"><img
+                        src="img/sns/insta.WEBP"></a>
+                <a href="https://www.facebook.com/villains89/" target="_blank" rel="noopener noreferrer"><img
+                        src="img/sns/fb.png"></a>
+                <a href="https://twitter.com/Villains_bbc" target="_blank" rel="noopener noreferrer"><img
+                        src="img/sns/twitter.png"></a>
+            </div>
         </div>
     </header>
-    <div class="content">
-        <h2>《　プレイヤー　》</h2>
-        <table class="table-member" align="center">
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top md-4 p-0" style="background-color: rgb(3, 15, 67);">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">チーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="member.html">メンバー</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">試合</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">スケジュール</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sns.html">SNS/問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="tag">
+            <h2>《　プレイヤー　》</h2>
+        </div>
+        <table class="table table-sm">
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/saya.jpeg">
-                        <img class="img2" src="img/member/saya2.jpg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/saya.jpeg" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">saya</td>
+                    <td rowspan="6">
+                        <img src="img/member/saya2.jpg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>saya</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -84,44 +107,17 @@
                     <td>練習して練習して、走投守の基礎を固めます🔥</td>
                 </tr>
             </tbody>
-            <!-- <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/noimage.png">
-                        <img class="img2" src="">
-                    </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">佐藤</td>
-                </tr>
-                <tr>
-                    <th>ポジション</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>投打</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>野球歴</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>経験スポーツ</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>2021年度の意気込み</th>
-                    <td></td>
-                </tr>
-            </tbody> -->
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/ryoko.JPG">
-                        <img class="img2" src="">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/ryoko.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">りょーこ</td>
+                    <td rowspan="6">
+                        <img src="" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>りょーこ</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -144,44 +140,18 @@
                     <td></td>
                 </tr>
             </tbody>
-            <!-- <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/noimage.png">
-                        <img class="img2" src="">
-                    </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">せいら</td>
-                </tr>
-                <tr>
-                    <th>ポジション</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>投打</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>野球歴</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>経験スポーツ</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>2021年度の意気込み</th>
-                    <td></td>
-                </tr>
-            </tbody> -->
+
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/beni.JPG">
-                        <img class="img2" src="img/member/beni2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/beni.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">BENI</td>
+                    <td rowspan="6">
+                        <img src="img/member/beni2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>BENI</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -204,14 +174,17 @@
                     <td>1歳若くなろう</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/noimage.png">
-                        <img class="img2" src="img/member/tomato2.JPG">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/noimage.png" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">とまと</td>
+                    <td rowspan="6">
+                        <img src="img/member/tomato2.JPG" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>とまと</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -234,14 +207,17 @@
                     <td>チームに貢献する。</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/aimi.JPG">
-                        <img class="img2" src="img/member/aimi2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/aimi.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">あいみ</td>
+                    <td rowspan="6">
+                        <img src="img/member/aimi2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>あいみ</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -264,14 +240,17 @@
                     <td>チームに貢献できるように頑張ります</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/saki.JPG">
-                        <img class="img2" src="img/member/saki2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/saki.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">SAKI</td>
+                    <td rowspan="6">
+                        <img src="img/member/saki2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>SAKI</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -294,14 +273,17 @@
                     <td>走攻守でチームの勝利に貢献する！！！</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/rika.JPG">
-                        <img class="img2" src="img/member/rika2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/rika.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">リカ</td>
+                    <td rowspan="6">
+                        <img src="img/member/rika2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>リカ</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -324,14 +306,17 @@
                     <td>頑張る</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/kaji.JPG">
-                        <img class="img2" src="img/member/kaji2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/kaji.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">かじ</td>
+                    <td rowspan="6">
+                        <img src="img/member/kaji2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>かじ</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -354,14 +339,17 @@
                     <td>チームのみんなと野球を楽しむ！打率UP！</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/mirai.JPG">
-                        <img class="img2" src="">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/mirai.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">みらい</td>
+                    <td rowspan="6">
+                        <img src="" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>みらい</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -369,7 +357,7 @@
                 </tr>
                 <tr>
                     <th>投打</th>
-                    <td></td>
+                    <td>右・右</td>
                 </tr>
                 <tr>
                     <th>野球歴</th>
@@ -384,14 +372,17 @@
                     <td></td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/akari.JPG">
-                        <img class="img2" src="">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/akari.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">あかりん</td>
+                    <td rowspan="6">
+                        <img src="" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>あかりん</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -414,14 +405,17 @@
                     <td>目指せ 3割バッター</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/yasu.JPG">
-                        <img class="img2" src="img/member/yasu2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/yasu.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">やす</td>
+                    <td rowspan="6">
+                        <img src="img/member/yasu2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>やす</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -444,14 +438,17 @@
                     <td>成長します！！</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/yurika.JPG">
-                        <img class="img2" src="img/member/yurika2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/yurika.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">ゆりか</td>
+                    <td rowspan="6">
+                        <img src="img/member/yurika2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>ゆりか</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -474,14 +471,17 @@
                     <td>キャッチボールの距離を伸ばす！！そして確実にとる🤘😆</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/mika.JPG">
-                        <img class="img2" src="">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/mika.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">みか</td>
+                    <td rowspan="6">
+                        <img src="" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>みか</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -504,14 +504,17 @@
                     <td></td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/eri.JPG">
-                        <img class="img2" src="img/member/eri2.jpg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/eri.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">ERI</td>
+                    <td rowspan="6">
+                        <img src="img/member/eri2.jpg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>ERI</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -534,14 +537,17 @@
                     <td>発足2年目で初の全国大会出場</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/mizuki.JPG">
-                        <img class="img2" src="img/member/mizuki2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/mizuki.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">みずき</td>
+                    <td rowspan="6">
+                        <img src="img/member/mizuki2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>みずき</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -564,14 +570,17 @@
                     <td>上手くなれるように頑張ります！</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/nanaka.JPG">
-                        <img class="img2" src="img/member/nanaka2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/nanaka.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">ななか</td>
+                    <td rowspan="6">
+                        <img src="img/member/nanaka2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>ななか</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -594,14 +603,17 @@
                     <td>打率を上げる！</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/tommy.jpeg">
-                        <img class="img2" src="img/member/tommy2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/tommy.jpeg" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">TOMMY</td>
+                    <td rowspan="6">
+                        <img src="img/member/tommy2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>TOMMY</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -624,14 +636,17 @@
                     <td>一 転ばない、一 眼鏡は命、一 楽しむ</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/nami.JPG">
-                        <img class="img2" src="img/member/nami2.JPG">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/nami.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">なみ</td>
+                    <td rowspan="6">
+                        <img src="img/member/nami2.JPG" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>なみ</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -655,16 +670,23 @@
                 </tr>
             </tbody>
         </table>
-        <table class="table-member" align="center">
+    </div>
+
+    <div class="container">
+        <div class="tag">
             <h2>《　コーチ・トレーナー　》</h2>
+        </div>
+        <table class="table table-sm">
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/shige.JPG">
-                        <img class="img2" src="">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/shige.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">しげ</td>
+                    <td rowspan="6">
+                        <img src="" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>しげ</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -687,14 +709,17 @@
                     <td></td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/taiga.JPG">
-                        <img class="img2" src="img/member/taiga2.JPG">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/taiga.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">杉本大河</td>
+                    <td rowspan="6">
+                        <img src="img/member/taiga2.JPG" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>杉本大河</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -717,14 +742,17 @@
                     <td>実食で世界を平和に</td>
                 </tr>
             </tbody>
+
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/kudou.JPG">
-                        <img class="img2" src="img/member/kudou2.jpeg">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/kudou.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">新一</td>
+                    <td rowspan="6">
+                        <img src="img/member/kudou2.jpeg" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>新一</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -747,14 +775,17 @@
                     <td>真実はいつも一つ！</td>
                 </tr>
             </tbody>
+            
             <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/tawa.JPG">
-                        <img class="img2" src="">
+                <tr class="align-bottom">
+                    <td rowspan="6">
+                        <img src="img/member/tawa.JPG" class="img-fluid">
                     </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">多和</td>
+                    <td rowspan="6">
+                        <img src="" class="img-fluid">
+                    </td>
+                    <th scope="row">名前</th>
+                    <td>多和</td>
                 </tr>
                 <tr>
                     <th>ポジション</th>
@@ -777,40 +808,23 @@
                     <td></td>
                 </tr>
             </tbody>
-            <!-- <tbody>
-                <tr>
-                    <td rowspan="6" class="table-member-1">
-                        <img class="img1" src="img/member/noimage.png">
-                        <img class="img2" src="">
-                    </td>
-                    <th class="table-member-2">名前</th>
-                    <td class="table-member-3">のじ</td>
-                </tr>
-                <tr>
-                    <th>ポジション</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>投打</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>野球歴</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>経験スポーツ</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>2021年度の意気込み</th>
-                    <td></td>
-                </tr>
-            </tbody> -->
         </table>
     </div>
+
     <p id="pageTop"><a href="#">↑</a></p>
+
     <script type="text/javascript">footer();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
