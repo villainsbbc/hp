@@ -1,13 +1,44 @@
 var events = [
-    {'Date': new Date(2020, 9, 31), 'Title': '練習試合 @砧野球場'},
-    {'Date': new Date(2020, 10, 8), 'Title': '練習試合 vs戸越エンジェルコーチ陣 @南埠頭公園'},
-    {'Date': new Date(2020, 10, 12), 'Title': 'ナイター練習 @砧公園'},
-    {'Date': new Date(2020, 10, 15), 'Title': '関東大会 vsワイルドブルーローズ @戸田公園'},
-    {'Date': new Date(2020, 10, 22), 'Title': '関東大会（15日勝ったら）@戸田公園'},
-    {'Date': new Date(2020, 10, 29), 'Title': '練習 @芝公園'},
-    {'Date': new Date(2020, 11, 13), 'Title': '練習試合 vsBADASS @未定'}
-  ];
-  
-  var settings = {};
-  var element = document.getElementById('caleandar');
-  caleandar(element, events, settings);
+  {
+    title:'練習試合@砧野球場',
+    start:"2020-10-31"
+  },
+  {
+    title:'練習試合 vs戸越エンジェルコーチ陣@南埠頭公園',
+    start:"2020-11-08"
+  },
+  {
+    title:'ナイター練習@砧公園',
+    start:"2020-11-12"
+  },
+  {
+    title:'関東大会 vsワイルドブルーローズ@戸田公園',
+    start:"2020-11-15"
+  },
+  {
+    title:'関東大会（15日勝ったら）@戸田公園',
+    start:"2020-11-22"
+  },
+  {
+    title:'練習@芝公園',
+    start:"2020-11-29"
+  },
+  {
+    title:'練習試合 vsBADASS@未定',
+    start:"2020-12-13"
+  },
+  {
+    title:'13:00 練習@篠崎公園',
+    start:'2021-06-06'
+  },
+  {
+    title:'16:30 自主練@若松公園',
+    start:'2021-06-06'
+  },
+  {
+    title:'練習@篠崎公園',
+    start:'2021-06-20T15:00:00',
+    end:'2021-06-20T17:00:00',
+    description:'15:00-17:00 練習@篠崎公園'
+  }
+]

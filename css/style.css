@@ -231,3 +231,21 @@ footer{
 .qa_elm p{
 	padding: 10px 30px;
 }
+/*schedule*/
+.fc-scrollgrid-sync-inner a {
+    color: black;
+    text-decoration: none;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.fc-toolbar-chunk h2{
+	color: black;
+}
+
+.fc-event{
+	font-size: 0.8vw !important;
+}
