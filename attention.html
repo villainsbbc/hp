@@ -5,60 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attention</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrapのcss -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- <script type="text/javascript" src="js/pagetop.js"></script> -->
     <script type="text/javascript" src="js/footer.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="img/logo.PNG" class="img-logo">
-        <h1>女子軟式野球チーム Villains(ヴィランズ)</h1>
-        <div class="img-logo-sns">
-            <a href="https://www.instagram.com/villains_bbc/" target="_blank" rel="noopener noreferrer"><img src="img/sns/insta.WEBP"></a>
-            <a href="https://www.facebook.com/villains89/" target="_blank" rel="noopener noreferrer"><img src="img/sns/fb.png"></a>
-            <a href="https://twitter.com/Villains_bbc" target="_blank" rel="noopener noreferrer"><img src="img/sns/twitter.png" ></a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Home</a><br>
-                    <p class="rubi">ホーム</p>
-                </li>
-                <li><a href="team.html">Team</a><br>
-                    <p class="rubi">チーム</p>
-                </li>
-                <li><a href="member.html">Member</a><br>
-                    <p class="rubi">メンバー</p>
-                </li>
-                <li><a href="game.html">Game</a><br>
-                    <p class="rubi">試合</p>
-                </li>
-                <li><a href="schedule.html">Schedule</a><br>
-                    <p class="rubi">スケジュール</p>
-                </li>
-                <li><a href="sns.html">Communication</a><br>
-                    <p class="rubi">SNS/問い合わせ</p>
-                </li>
-            </ul>
+        <div class="row align-items-center">
+            <img src="img/logo.PNG" class="img-logo col-2 img-fluid">
+            <div class="col-7">
+                <h1>女子軟式野球チーム Villains(ヴィランズ)</h1>
+            </div>
+            <div class="img-logo-sns col-3 img-fluid">
+                <a href="https://www.instagram.com/villains_bbc/" target="_blank" rel="noopener noreferrer"><img
+                        src="img/sns/insta.WEBP"></a>
+                <a href="https://www.facebook.com/villains89/" target="_blank" rel="noopener noreferrer"><img
+                        src="img/sns/fb.png"></a>
+                <a href="https://twitter.com/Villains_bbc" target="_blank" rel="noopener noreferrer"><img
+                        src="img/sns/twitter.png"></a>
+            </div>
         </div>
     </header>
-    <div class="content">
-        <h2>著作権について</h2>
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top md-4 p-0" style="background-color: rgb(3, 15, 67);">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">チーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">メンバー</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">試合</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">スケジュール</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sns.html">SNS/問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="tag">
+            <h2>著作権について</h2>
+        </div>
         <p>当サイトで提供されている情報及び画像等の著作権は、Villainsに帰属します。このため、情報及び画像の無断転載は一切お断りいたします。</p>
-
-        <h2>リンクについて</h2>
+        <br>
+        <div class="tag">
+            <h2>リンクについて</h2>
+        </div>
         <p>当サイトへのリンクは原則として自由ですが、リンクを希望する方のウェブページの内容や、リンクの方法、リンク先によってはお断りする場合もあります。リンクされる場合には、下記の事項に従ってください。</p>
-        <p>1.リンク先は、トップページにお願いします。個別ページに対する直接のリンクはご遠慮ください。</p>
-        <p>2.当サイトへのリンク表示にあたっては、Webサイトの品位を十分に保つように心がけてください。</p>
-        <p>3.独自のフレームの中に、当サイトを取り込んだ形のリンクを使用しないでください。</p>
-        <p>4.見出しを貴サイトに表示したうえでリンクをすると、当サイトの著作物を使用することになり、著作権法に触れることがあります。見出しを表示される場合は、別途、承諾を得てください。</p>
-        <p>5.本文記載の条件にしたがっていただけない場合またはしたがう意思がない場合は、リンクの使用を直ちに中止いただくことがあります。</p>
-
-        <h2>写真等のダウンロード、掲載などについてのお願い</h2>
+        <ol>
+            <li>リンク先は、トップページにお願いします。個別ページに対する直接のリンクはご遠慮ください。</li>
+            <li>当サイトへのリンク表示にあたっては、Webサイトの品位を十分に保つように心がけてください。</li>
+            <li>独自のフレームの中に、当サイトを取り込んだ形のリンクを使用しないでください。</li>
+            <li>見出しを貴サイトに表示したうえでリンクをすると、当サイトの著作物を使用することになり、著作権法に触れることがあります。見出しを表示される場合は、別途、承諾を得てください。</li>
+            <li>本文記載の条件にしたがっていただけない場合またはしたがう意思がない場合は、リンクの使用を直ちに中止いただくことがあります。</li>
+        </ol>
+        <br>
+        <div class="tag">
+            <h2>写真等のダウンロード、掲載などについてのお願い</h2>
+        </div>
         <p>当サイトに掲載された試合、選手の写真、映像ファイル等の使用についてはご遠慮ください。</p>
+        <br>
     </div>
 
     <script type="text/javascript">footer();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
