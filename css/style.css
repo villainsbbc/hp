@@ -35,6 +35,9 @@ h2 {
 .img-logo{
 	max-width: 13%;
 }
+.img-logo-sns{
+	text-align: right;
+}
 .img-logo-sns img{
 	max-width: 30%;	
 	padding: 2%;
