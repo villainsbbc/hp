@@ -1,6 +1,5 @@
 body{
 	background-color: #fff;
-	font-size: 2vw;
 	height: 100%;
 }
 .container{
@@ -24,7 +23,6 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5vw;
 	color: #fff;
 	text-align: center;
 }
@@ -51,10 +49,6 @@ h2 {
 .content{
 	background-color: #fff;
 	padding: 40px;
-}
-
-.nav-item a{
-	font-size: 1.5vw;
 }
 
 .menu ul{
@@ -157,7 +151,7 @@ h2 {
 
 footer{
 	text-align: center;
-	font-size: 80%;
+	font-size: 90%;
 	padding: 0%;
 }
 
