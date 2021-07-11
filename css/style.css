@@ -51,10 +51,16 @@ h2 {
 	background-color: #fff;
 	padding: 40px;
 }
-
-
+@media only screen and (min-width:599px) {
+	body {
+		font-size: 2vw;
+	}
+	.nav-item a{
+		font-size: smaller;
+	}
+	
+}
 .menu ul{
-	/* margin: 20px ; */
 	padding: 0.5%;
 	background-color: rgb(3, 15, 67);
 	}
@@ -71,7 +77,7 @@ h2 {
 .menu a{
 	text-decoration: none;
 	color: #fff;
-	font-size:xx-small;
+	font-size: 50%;
 	}
 .menu a.current{
 	color: #00B0F0;
@@ -105,6 +111,9 @@ h2 {
 	#twitter {
 		padding: 0% 3%;
 		height: 75vh;
+	}
+	.menu a{
+		font-size:xx-small;
 	}
 	
 }
@@ -156,6 +165,10 @@ footer{
 	text-align: center;
 	padding: 0%;
 }
+footer p{
+	font-size: 1vw;
+}
+
 
 /*team css*/
 
