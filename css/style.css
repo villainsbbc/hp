@@ -119,7 +119,9 @@ video {
 	.menu a{
 		font-size:xx-small;
 	}
-	
+	h2{
+		font-size: 4vw;
+	}	
 }
 
 #insta a img:hover{
