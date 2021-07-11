@@ -92,6 +92,10 @@ h2 {
 	text-align: center;
 	height: 100%;
 }
+video {
+	padding: 5%;
+	max-width: 100%;
+  }
 #sns {
 	padding: 3% 0%;
 }
