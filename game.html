@@ -83,29 +83,29 @@
 
     <div class="container">
         <select class="year" style="direction: rtl;">
-            <option value="select">年-----</option>
+            <option value="select">年</option>
             <option value="2020">2020年</option>
-            <option value="2021">2021年</option>
+            <option value="2021" selected>2021年</option>
         </select>
 
         <select class="month" style="direction: rtl;">
-            <option value="select">月--</option>
-            <option value="jan">1月</option>
-            <option value="feb">2月</option>
-            <option value="mar">3月</option>
-            <option value="apr">4月</option>
-            <option value="may">5月</option>
-            <option value="june">6月</option>
-            <option value="july">7月</option>
-            <option value="aug">8月</option>
-            <option value="sept">9月</option>
-            <option value="oct">10月</option>
-            <option value="nov">11月</option>
-            <option value="dec">12月</option>
+            <option value="select">月</option>
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
+            <option value="4">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+            <option value="7" selected>7月</option>
+            <option value="8">8月</option>
+            <option value="9">9月</option>
+            <option value="10">10月</option>
+            <option value="11">11月</option>
+            <option value="12">12月</option>
         </select>
 
         <div id=2020>
-            <section id="nov">
+            <section id="11">
                 <div id="carouselExampleDark_nov" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -122,7 +122,7 @@
                     </a>
                 </div>
             </section>
-            <section id="oct">
+            <section id="10">
                 <div id="carouselExampleDark_oct" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -146,17 +146,36 @@
                 </div>
             </section>
         </div>
+        <div id="2021">
+            <section id="7">
+                <br>
+                <p>試合結果はありません</p>
+                <br>
+            </section>
+
+        </div>
     </div>
 
     <script>
         $(function () {
+            $('section').hide();
+            var date =new Date(); 
+            var y = date.getFullYear();
+            var m = date.getMonth()+1;
+            var year = y.toString();
+            var month = m.toString();
+            // var year = "2020";
+            // var month = "10";
+            $('#' + year + ' #' + month).fadeIn();
+        
+
             $('.year').change(function () {
-                var val1 = $(this).val();
+                var year = $(this).val();
 
                 $('.month').change(function () {
-                    var val2 = $(this).val();
+                    var month = $(this).val();
                     $('section').hide();
-                    $('#' + val1 + ' #' + val2).fadeIn();
+                    $('#' + year + ' #' + month).fadeIn();
                 });
             });
         });
