@@ -256,7 +256,7 @@ footer p{
 
 /*member*/
 .align-bottom td:nth-child(1){
-	width: 32%;
+	width: 35%;
 	padding: 0% 2% 1% 2%;
 }
 .align-bottom td:nth-child(2){
@@ -264,7 +264,7 @@ footer p{
 	padding: 1% 1% 1% 0%;
 }
 .align-bottom th{
-	width: 15%;
+	width: 13%;
 }
 .align-bottom td:nth-child(3){
 	width: 35%;
