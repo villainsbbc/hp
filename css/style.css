@@ -74,11 +74,7 @@ h2 {
 	max-width: 30%;	
 	padding: 2%;
 }
-.img-logo-sns img:hover{
-	-webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-}
+
 .content{
 	background-color: #fff;
 	padding: 40px;
@@ -154,18 +150,6 @@ video {
 	h2{
 		font-size: 4vw;
 	}	
-}
-
-#insta a img:hover{
-	-webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-}
-
-#twitter a img:hover{
-	-webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
 }
 
 #pageTop {
