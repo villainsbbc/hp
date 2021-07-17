@@ -270,18 +270,6 @@ footer p{
 	width: 33%;
 }
 
-/* schedule */
-.fc-daygrid-event{/*幅内に収める*/
-	white-space: normal!important;
-	word-wrap:break-word!important;
-}
-.fc-daygrid .fc-event-time{
-    display : none;
-}
-.fc-daygrid .fc-event-title{
-	font-size: 1em;
-}
-
 /*q&a*/
 #qa{
 	
@@ -304,6 +292,19 @@ footer p{
 }
 .fc-toolbar-chunk h2{
 	color: black;
+}
+.fc-daygrid-event{/*幅内に収める*/
+	white-space: normal!important;
+	word-wrap:break-word!important;
+}
+.fc-daygrid .fc-event-time{
+    display : none;
+}
+.fc-daygrid .fc-event-title{
+	font-size: 1.2em;
+}
+.fc-list {
+	font-size: 1.2em;
 }
 
 /* attention */
