@@ -42,20 +42,12 @@
                 businessHours: true,
 
                 events: events,
+                //hh:mmの形に
                 eventTimeFormat: {
-                    hour: 'numeric', 
-                    minute: '2-digit' 
+                    hour: 'numeric',
+                    minute: '2-digit'
                 },
-                eventRender: function (eventObj, el) {
-                    $(el).popover({
-                        title: eventObj.title,
-                        content: eventObj.description,
-                        trigger: 'hover',
-                        placement: 'top',
-                        container: 'body',
-                        html: true
-                    });
-                },
+                eventDisplay: 'block',
 
                 navLinks: false,
 

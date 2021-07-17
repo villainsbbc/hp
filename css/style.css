@@ -270,6 +270,18 @@ footer p{
 	width: 33%;
 }
 
+/* schedule */
+.fc-daygrid-event{/*幅内に収める*/
+	white-space: normal!important;
+	word-wrap:break-word!important;
+}
+.fc-daygrid .fc-event-time{
+    display : none;
+}
+.fc-daygrid .fc-event-title{
+	font-size: 1em;
+}
+
 /*q&a*/
 #qa{
 	
