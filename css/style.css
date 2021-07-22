@@ -232,6 +232,10 @@ footer p{
 	width: 75%;
 }
 
+.team-table{
+	padding: 0 10%;
+}
+
 /*game css*/
 .carousel-item img{
 		border: solid #b8bdb8;
