@@ -178,6 +178,15 @@
                     $('#' + year + ' #' + month).fadeIn();
                 });
             });
+            $('.month').change(function () {
+                var month = $(this).val();
+
+                $('.year').change(function () {
+                    var year = $(this).val();
+                    $('section').hide();
+                    $('#' + year + ' #' + month).fadeIn();
+                });
+            });
         });
     </script>
     <script type="text/javascript">footer();</script>
