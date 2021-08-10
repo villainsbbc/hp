@@ -96,7 +96,7 @@
             <option value="4">4月</option>
             <option value="5">5月</option>
             <option value="6">6月</option>
-            <option value="7" selected>7月</option>
+            <option value="7">7月</option>
             <option value="8">8月</option>
             <option value="9">9月</option>
             <option value="10">10月</option>
@@ -152,6 +152,11 @@
                 <p>試合結果はありません</p>
                 <br>
             </section>
+            <section id="8">
+                <br>
+                <p>試合結果はありません</p>
+                <br>
+            </section>
 
         </div>
     </div>
@@ -166,8 +171,9 @@
             var month = m.toString();
             // var year = "2020";
             // var month = "10";
+            $('option[value="' + month +'"]').prop('selected', true);
             $('#' + year + ' #' + month).fadeIn();
-        
+
 
             $('.year').change(function () {
                 var year = $(this).val();
