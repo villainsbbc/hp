@@ -441,28 +441,28 @@
             // var year = "2020";
             // var month = "10";
             $('option[value="' + month + '"]').prop('selected', true);
-            $('#' + year + '#' + month).fadeIn();
+            $('#' + year + ', #' + month).fadeIn();
 
             $('.year').change(function () {
                 var year = $(this).val();
                 $('section').hide();
-                $('#' + year + ' #' + month).fadeIn();
+                $('#' + year + ', #' + month).fadeIn();
 
                 $('.month').change(function () {
                     var month = $(this).val();
                     $('section').hide();
-                    $('#' + year + ' #' + month).fadeIn();
+                    $('#' + year + ', #' + month).fadeIn();
                 });
             });
             $('.month').change(function () {
                 var month = $(this).val();
                 $('section').hide();
-                $('#' + year + ' #' + month).fadeIn();
+                $('#' + year + ', #' + month).fadeIn();
 
                 $('.year').change(function () {
                     var year = $(this).val();
                     $('section').hide();
-                    $('#' + year + ' #' + month).fadeIn();
+                    $('#' + year + ', #' + month).fadeIn();
                 });
             });
         });
