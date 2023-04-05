@@ -73,7 +73,8 @@
             <option value="select">年</option>
             <option value="2020">2020年</option>
             <option value="2021">2021年</option>
-            <option value="2022" selected>2022年</option>
+            <option value="2022">2022年</option>
+            <option value="2023" selected>2023年</option>
         </select>
 
         <select class="month" style="direction: rtl;">
@@ -92,7 +93,44 @@
             <option value="12">12月</option>
         </select>
 
+        <div id="2023">
+            <section id="4">
+                <div id="arouselExampleControls_2304" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/game/230402.png" alt="game_230402" class="d-block w-100"> 
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#arouselExampleControls_2304" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#arouselExampleControls_2304" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+
         <div id="2022">
+            <section id="10">
+                <div id="arouselExampleControls_2210" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/game/221002.png" alt="game_221002" class="d-block w-100">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#arouselExampleControls_2210" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#arouselExampleControls_2210" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </section>
             <section id="9">
                 <div id="arouselExampleControls_2209" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -204,7 +242,6 @@
                     </a>
                 </div>
             </section>
-
         </div>
 
         <div id="2021">
@@ -326,7 +363,7 @@
                 </div>
             </section>
         </div>
-        <div id=2020>
+        <div id="2020">
             <section id="11">
                 <div id="arouselExampleControls_2011" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -370,7 +407,6 @@
                     </a>
                 </div>
             </section>
-
             <section id="8">
                 <div id="arouselExampleControls_2008" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -405,29 +441,28 @@
             // var year = "2020";
             // var month = "10";
             $('option[value="' + month + '"]').prop('selected', true);
-            $('#' + year + ' #' + month).fadeIn();
-
+            $('#' + year + ', #' + month).fadeIn();
 
             $('.year').change(function () {
                 var year = $(this).val();
                 $('section').hide();
-                $('#' + year + ' #' + month).fadeIn();
+                $('#' + year + ', #' + month).fadeIn();
 
                 $('.month').change(function () {
                     var month = $(this).val();
                     $('section').hide();
-                    $('#' + year + ' #' + month).fadeIn();
+                    $('#' + year + ', #' + month).fadeIn();
                 });
             });
             $('.month').change(function () {
                 var month = $(this).val();
                 $('section').hide();
-                $('#' + year + ' #' + month).fadeIn();
+                $('#' + year + ', #' + month).fadeIn();
 
                 $('.year').change(function () {
                     var year = $(this).val();
                     $('section').hide();
-                    $('#' + year + ' #' + month).fadeIn();
+                    $('#' + year + ', #' + month).fadeIn();
                 });
             });
         });
