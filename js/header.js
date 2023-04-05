@@ -3,7 +3,7 @@ function header(){
     html += '<header>';
     html += '<div class="row align-items-center">';
     html += '<div class="col-2" id="col">';
-    html += '<a href="index.html"><img src="img/logo2.png" class="img-logo img-fluid" ></a>';
+    html += '<a href="index.html"><img src="img/logo.png" class="img-logo img-fluid" ></a>';
     html += '</div>';
     html += '<div class="col-7" id="col">'
     html += '<h1>女子軟式野球チーム Villains(ヴィランズ)</h1>';
