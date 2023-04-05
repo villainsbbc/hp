@@ -9,7 +9,7 @@ function header(){
     html += '<h1>女子軟式野球チーム Villains(ヴィランズ)</h1>';
     html += '</div>';
     html += '<div class="img-logo-sns col-3 img-fluid" id="col">';
-    html += '<a href="https://www.instagram.com/villains_bbc/" target="_blank" rel="noopener noreferrer"><img src="img/sns/insta.WEBP"></a>';
+    html += '<a href="https://www.instagram.com/villains_bbc/" target="_blank" rel="noopener noreferrer"><img src="img/sns/insta.webp"></a>';
     html += '<a href="https://www.facebook.com/villains89/" target="_blank" rel="noopener noreferrer"><img src="img/sns/fb.png"></a>';
     html += '<a href="https://twitter.com/Villains_bbc" target="_blank" rel="noopener noreferrer"><img src="img/sns/twitter.png"></a>';
     html += '</div>';
