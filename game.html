@@ -97,7 +97,7 @@
         </select>
 
         <div id="2023">
-            <section id="4">
+            <section id="20234">
                 <div id="arouselExampleControls_2304" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -117,7 +117,7 @@
         </div>
 
         <div id="2022">
-            <section id="10">
+            <section id="202210">
                 <div id="arouselExampleControls_2210" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -134,7 +134,7 @@
                     </a>
                 </div>
             </section>
-            <section id="9">
+            <section id="20229">
                 <div id="arouselExampleControls_2209" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -154,7 +154,7 @@
                     </a>
                 </div>
             </section>
-            <section id="7">
+            <section id="20227">
                 <div id="arouselExampleControls_2207" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -171,7 +171,7 @@
                     </a>
                 </div>
             </section>
-            <section id="6">
+            <section id="20226">
                 <div id="arouselExampleControls_2206" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -194,7 +194,7 @@
                     </a>
                 </div>
             </section>
-            <section id="4">
+            <section id="20224">
                 <div id="arouselExampleControls_2204" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -211,7 +211,7 @@
                     </a>
                 </div>
             </section>
-            <section id="3">
+            <section id="20223">
                 <div id="arouselExampleControls_2203" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -228,7 +228,7 @@
                     </a>
                 </div>
             </section>
-            <section id="2">
+            <section id="20222">
                 <div id="arouselExampleControls_2202" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -248,7 +248,7 @@
         </div>
 
         <div id="2021">
-            <section id="11">
+            <section id="202111">
                 <div id="arouselExampleControls_2111" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -268,7 +268,7 @@
                     </a>
                 </div>
             </section>
-            <section id="10">
+            <section id="202110">
                 <div id="arouselExampleControls_2110" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -288,7 +288,7 @@
                     </a>
                 </div>
             </section>
-            <section id="9">
+            <section id="20219">
                 <div id="arouselExampleControls_2109" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -311,7 +311,7 @@
                     </a>
                 </div>
             </section>
-            <section id="8">
+            <section id="20218">
                 <div id="arouselExampleControls_2108" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -331,7 +331,7 @@
                     </a>
                 </div>
             </section>
-            <section id="4">
+            <section id="20214">
                 <div id="arouselExampleControls_2104" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -348,7 +348,7 @@
                     </a>
                 </div>
             </section>
-            <section id="3">
+            <section id="20213">
                 <div id="arouselExampleControls_2103" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -367,7 +367,7 @@
             </section>
         </div>
         <div id="2020">
-            <section id="11">
+            <section id="202011">
                 <div id="arouselExampleControls_2011" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -387,7 +387,7 @@
                     </a>
                 </div>
             </section>
-            <section id="10">
+            <section id="202010">
                 <div id="carouselExampleControls_2010" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -410,7 +410,7 @@
                     </a>
                 </div>
             </section>
-            <section id="8">
+            <section id="20208">
                 <div id="arouselExampleControls_2008" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -441,32 +441,21 @@
             var m = date.getMonth() + 1;
             var year = y.toString();
             var month = m.toString();
-            // var year = "2020";
-            // var month = "10";
+            
             $('option[value="' + month + '"]').prop('selected', true);
-            $('#' + year + ', #' + month).fadeIn();
-
+            $('#' + year + month).fadeIn();
             $('.year').change(function () {
+                $('section').hide();
                 var year = $(this).val();
-                $('section').hide();
-                $('#' + year + ', #' + month).fadeIn();
-
-                $('.month').change(function () {
-                    var month = $(this).val();
-                    $('section').hide();
-                    $('#' + year + ', #' + month).fadeIn();
-                });
+                var month = $('.month').val();
+                $('#' + year + month).fadeIn();
             });
-            $('.month').change(function () {
-                var month = $(this).val();
-                $('section').hide();
-                $('#' + year + ', #' + month).fadeIn();
 
-                $('.year').change(function () {
-                    var year = $(this).val();
-                    $('section').hide();
-                    $('#' + year + ', #' + month).fadeIn();
-                });
+            $('.month').change(function () {
+                $('section').hide();
+                var year = $('.year').val();
+                var month = $(this).val();
+                $('#' + year + month).fadeIn();
             });
         });
     </script>
